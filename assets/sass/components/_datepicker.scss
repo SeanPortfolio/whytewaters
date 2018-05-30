@@ -1,0 +1,123 @@
+.ui-datepicker-inline{
+	z-index:9999 !important;
+	color:#000;
+	border:none;
+	font-size:14px;
+	padding:5px;
+	width:280px !important;
+	position:relative;
+	left: 50%;
+	transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+
+	.ui-datepicker-month{
+		margin-left:-5px;
+	}
+
+	.ui-datepicker-year{
+		margin-left:10px;
+	}
+	th{
+		font-weight:100;
+		color:$black;
+		font-weight: $fw-bold;
+	}
+	.ui-datepicker-title {
+		color:$black;
+		font-weight:$fw-bold;
+		font-size:20px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.ui-datepicker-header{
+		background:none;
+		border:none;
+		margin-bottom:10px;
+	}
+
+	.ui-state-default{
+		background:$light-grey;
+		border:1px solid $mid-blue;
+		color: $black;
+		height: 35px;
+    	width: 35px;
+    	line-height:35px;
+    	text-align:center;
+    	display:inline-block;
+    	margin:2px;
+    	font-weight:$fw-bold;
+
+    	&:hover{
+			background:$black;
+			color:$white;
+		}
+	}
+
+	.ui-state-active, .ui-state-active:hover{
+		background:$light-gold;
+		color:$black;
+	}
+	
+	.ui-datepicker-unselectable.ui-state-disabled.booked{
+		@include opacity(1);
+		span{
+			background:$black !important;
+			color:#fff;
+
+		}
+	}
+
+	
+	.ui-datepicker-next, .ui-datepicker-prev{
+		position:absolute;
+		cursor:pointer;
+		font-size:35px;
+		margin-top:-9px;
+		border:none;
+		background:none;
+		font-weight: normal;
+		top:2px;
+		span {
+			display: none;
+		}
+
+		&:after{
+			font-family:$ff-fa;
+			display:inline-block;
+			color:$light-blue;
+		}
+		
+	}
+
+	.ui-datepicker-prev {
+		left:2px;
+
+		
+		&:after {
+			content: "\f104";
+			margin-left:-2px;
+		}
+	}
+	.ui-datepicker-next {
+		right:2px;
+		&:after {
+			content: "\f105";
+			margin-left:15px;
+		}		
+	}
+
+	.ui-datepicker-next.ui-state-disabled, .ui-datepicker-prev.ui-state-disabled, .ui-datepicker-next.ui-state-disabled:hover, .ui-datepicker-prev.ui-state-disabled:hover,
+	.ui-datepicker-unselectable, .ui-state-disabled, .ui-datepicker-unselectable:hover, .ui-state-disabled:hover{
+		@include opacity(0.3);
+		@include disable-selection();
+		background: #fff !important;
+		span{
+			background: #fff !important;
+			color:$light-gold;
+		}
+	}
+}
+.hasDatepicker{
+
+}

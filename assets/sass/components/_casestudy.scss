@@ -1,0 +1,148 @@
+.testm {
+  font-family: $ff-poppins;
+  font-size: 22px;
+  line-height: 1.2em;
+}
+
+.cs-logo {
+  margin-bottom: 40px;
+}
+
+.testm-wrap {
+  position: relative;
+  padding-left: 50px;
+}
+
+.testm-wrap:before {
+  content: "\f10d";
+  font-family: "FontAwesome";
+  width: 40px;
+  height: 40px;
+  top: -4px;
+  left: 0;
+  position: absolute;
+  font-size: 35px;
+  color: $dark-green;
+}
+
+.rep-photo {
+  max-height: 200px;
+  margin: 40px 0 20px;
+}
+
+.rep-photo img {
+  height: 200px;
+  width: 200px;
+}
+
+.rep-name {
+  font-family: $ff-poppins;
+}
+
+.cs-single {
+  padding-top: 50px;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+}
+
+.cs-list {
+  padding: 50px 0;
+  background: #f4f4f4;
+}
+
+.cs-list.case-study-page {
+  background: none;
+}
+
+.cs-list {
+  padding: 50px 0;
+}
+
+.cs-list h3 {
+  font-size: 26px;
+  color: $dark-green;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.cs-list .cs-label {
+  color: $dark-green;
+}
+
+.cs-list .cs-item {
+  background: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cs-list .cs-item .logo {
+  max-width: 200px;
+  margin: 15px 0;
+  max-height: 100px;
+}
+
+.cs-list .cs-item .logo img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.cs-list .cs-item h3 a {
+  color: #000;
+  transition: all 150ms ease-in-out;
+}
+
+.cs-list .cs-item h3 a:hover {
+  color: #c3cf21;
+}
+
+.cs-list .cs-item .cat-wrap {
+  padding: 0;
+}
+
+.cs-list .cs-item .cat-wrap .cs-label {
+  padding: 0;
+}
+
+.cs-list h3.has-motif {
+  margin-top: 0;
+}
+
+.feat-wrap .cs-label {
+  font-size: 26px;
+  color: $dark-green;
+}
+
+.feat-wrap .slick-dots {
+  text-align: right;
+}
+
+.feat-wrap {
+  padding: 70px 0 40px;
+  background: #f4f4f4;
+}
+
+.feat-wrap .logo {
+  margin: 30px 0;
+}
+
+.feat-wrap .slick-dots li {
+  width: 20px;
+  height: 20px;
+  border-color: #000;
+  background: #000;
+}
+
+.feat-wrap .slick-dots .slick-active {
+  background: $dark-green;
+  border-color: $dark-green;
+}
+
+.h2-font {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}

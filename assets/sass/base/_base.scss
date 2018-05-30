@@ -1,0 +1,77 @@
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+
+body{
+
+	font: normal normal normal #{$base-font-size}/#{$base-line-height} $base-font;
+	background:$white;
+	color:$base-color;
+}
+
+img{
+	max-width: 100%;
+}
+
+.no-scroll{
+	overflow:hidden;
+}
+
+
+a, a:hover{
+	color: $anchor-color;
+	text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+
+	font-weight: $heading-font-weight;
+
+	a, a:hover{
+		color: $anchor-color;
+		text-decoration: none !important;
+	}
+}
+
+h1,.h1 {
+	font-family:$ff-poppins;
+	font-weight:$fw-bold;
+	font-size: 38px;
+	color:$black;
+}
+h2,.h2 {
+	font-family:$ff-poppins;
+	font-weight:$fw-bold;
+	font-size: 34px;
+	color:$black;
+}
+h3,.h3 {
+	font-family:$ff-poppins;
+	font-weight:$fw-bold;
+	font-size: 30px;
+	color:$black;
+}
+h4,.h4 {
+	font-family:$ff-poppins;
+	font-weight:$fw-bold;
+	font-size: 28px;
+	color:$white;
+}
+h5,.h5 {
+
+}
+h6,.h6 {
+
+}
+
+p{
+	font-family:$ff-raleway;
+	font-weight: $fw-regular;
+	color: $black;
+	font-size:16px;
+	line-height:26px;
+}

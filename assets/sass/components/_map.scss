@@ -1,0 +1,14 @@
+.map__wrapper{
+	height:600px;
+	#map-canvas{
+		height: inherit;
+		margin: 0 -15px;
+	}
+	h4{
+		color:$light-gold;
+		margin:20px auto 10px;
+	}
+	p{
+		font-size: 18px !important;
+	}
+}

@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+// 1. CONFIGRATION AND HELPERS
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. VENDORS
+@import
+  'vendor/slick',
+  'vendor/photoswipe',
+  'vendor/photoswipe_default_skin',
+  'vendor/font_icons',
+  'vendor/bootstrap',
+  'vendor/fontawesome/fontawesome',
+  'vendor/animate';
+
+// 3. BASE CODE
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/icons',
+  'base/helpers';
+
+  // 4. COMPONENTS
+  @import
+    'components/hr',
+    'components/container',
+    'components/table',
+    'components/button',
+    'components/newsletter',
+    'components/highlights',
+    'components/gallery',
+    'components/popup',
+    'components/datepicker',
+    'components/banner',
+    'components/carousel',
+    'components/panel',
+    'components/stacked_nav',
+    'components/social',
+    'components/slider',
+    'components/quicklink',
+    'components/reviews',
+    'components/homepage-intro',
+    'components/map',
+    'components/faq',
+    'components/casestudy',
+    'components/partners',
+    'components/pricingtable';
+
+// 5. LAYOUT RELATED CODE
+@import
+  'layout/forms',
+  'layout/sidebar',
+  'layout/header',
+  'layout/navigation',
+  'layout/grid',
+  'layout/footer';
+
+// 6. PAGE-SPECIFIC STYLES
+@import
+  'pages/home',
+  'pages/blog',
+  'pages/contact';
+
+// 7. THEMES
+@import
+  'themes/default';

@@ -1,0 +1,192 @@
+.btn {
+  font-family: $ff-raleway;
+  font-weight: $fw-bold;
+  font-size: 18px;
+  background: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 0;
+  pointer-events: auto;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+.btn--big {
+  padding: 15px 50px;
+}
+
+.btn--ghost {
+  border: 1px solid $black;
+
+  &:hover {
+    background: $light-gold;
+    border: 1px solid $light-gold;
+  }
+
+  &.active {
+    background: $light-gold;
+    border: 1px solid $light-gold;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    color: $grey;
+    background: $mid-grey;
+    border: 1px solid $grey;
+  }
+}
+
+.btn__white--ghost {
+  border: 2px solid $white;
+  border-radius: 30px;
+  color: $white;
+  font-size: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    background: $black;
+    color: $white;
+    border: 2px solid $black;
+  }
+
+}
+
+.btn__gold {
+  background: $light-gold;
+  border: 1px solid $light-gold;
+
+  &:hover, &:focus {
+    background: $dark-gold;
+    border: 1px solid $dark-gold;
+  }
+}
+
+.btn__green {
+  background: $green;
+  border: 1px solid $green;
+  border-radius: 50px;
+  font-weight: normal;
+
+  &:hover, &:focus {
+    background: $black;
+    border: 1px solid $black;
+  }
+}
+
+.btn__see_all {
+  margin-top: 54px;
+  display: block;
+}
+
+.btn__green_square {
+  background: $green;
+  border: 1px solid $green;
+  font-weight: normal;
+
+  &:hover, &:focus {
+    background: $black;
+    border: 1px solid $black;
+  }
+}
+
+.btn__blue {
+  background: $mid-blue;
+  border: 1px solid $mid-blue;
+
+  &:hover, &:focus {
+    background: $light-blue;
+    border: 1px solid $light-blue;
+  }
+}
+
+.btn__white {
+  background: $white;
+  border: 2px solid $black;
+  border-radius: 50px;
+  font-weight: normal;
+  padding: 8px 13px;
+  display: inline-block;
+
+  &:hover, &:focus {
+    background: $black;
+    color: $white;
+    border: 2px solid $black;
+  }
+}
+
+.btn__float {
+  background: $black;
+  border: 2px solid $white;
+  border-right: none;
+  position: fixed;
+  right: 0;
+  line-height: 1.4;
+  height: initial;
+  z-index: 3;
+  color: $white;
+  border-radius: 31px 0 0 31px;
+  margin: 14px 0 0;
+  padding: 12px 28px;
+  font-weight: 500;
+  width: 131px;
+
+  &:hover, &:focus {
+    background: $white;
+    color: $black;
+    border: 2px solid $white;
+  }
+}
+
+.btn__blue--dark {
+  background: $black;
+  border: 1px solid $black;
+  color: $light-gold;
+
+  &:hover, &:focus {
+    background: $mid-blue;
+    border: 1px solid $mid-blue;
+    color: $light-gold;
+  }
+}
+
+.btn__link {
+  font-family: $ff-poppins;
+  font-weight: $fw-bold;
+  color: $dark-gold;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 20px 0 0 0;
+}
+
+.btn__group {
+  padding-bottom: 15px;
+
+  .btn {
+    margin: 0 0 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .btn--big {
+    padding: 12px 20px;
+    max-width: 380px;
+    text-align: center;
+  }
+
+}

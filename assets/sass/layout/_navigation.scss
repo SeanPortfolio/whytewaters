@@ -1,0 +1,394 @@
+.primary__header{
+	width: 100%;
+    height:105px;
+	position: fixed;
+    background: transparent;
+    z-index: 10;
+	padding-top: 40px;
+
+    .container{
+    	padding:0px;
+    }
+
+    .logo{
+    	position:absolute;
+    	top:0;
+    	left:50px;
+    	display: inline-block;
+    	left: 50px;
+    	transition-timing-function: ease-out;
+    	transition: 0.2s;
+    	padding-top: 40px;
+    	z-index: 11;
+
+    	img{
+    		width:100%;
+    	}
+    }
+	.nav__top,
+	#primary-nav{
+		text-align:right;
+		height: auto;
+	}
+	
+	.primary-nav__support {
+		display:block;
+		font-style: italic;
+		font-weight: 200;
+	}
+
+	.nav__booking__btn{
+		margin: 10px 15px;
+	}
+
+	.nav__fr__btn{
+		margin: -13px 15px 10px;
+	    text-align: left;
+	    line-height: 1.5 !important;
+	    padding: 10px 20px !important;
+	    right: 0;
+	    width: 206px;
+	    display: inline-block;
+	    position: absolute;
+	    top: 40px;
+	    font-size: 15px;
+
+    	&--text {
+    		font-weight: normal;
+    		float:right;
+    	}
+
+    	&:hover {
+    		color: $white !important;
+    	}
+	}
+
+    #primary-nav{
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+		right: 0;
+	    margin-right: 235px;
+
+		ul{
+			list-style: none;
+			margin: 0 auto;
+			
+			li {
+				display:inline-block;
+				position:relative;				
+				i{
+					display:none;
+				}
+				a {
+					font-family:$ff-raleway;
+					font-weight: $fw-regular;
+					color: $white;
+					font-size:15px;
+					padding:0px 10px;
+					text-transform: capitalize;
+					
+					line-height: 40px;
+
+					.fa {
+						display: none;
+						margin-left:5px;
+						line-height:1px;
+					}
+
+					&:hover,&:focus {
+						color: $green;
+					}
+					&:active {
+						color: $green;
+					}
+				}
+
+				ul {
+				    display: none;
+				    position:absolute;
+					min-width: 210px;
+					margin:0;
+					padding:10px 0;
+					-webkit-box-shadow: 0px 3px 8px $rgb-box-shadow-color;
+    				box-shadow: 0px 3px 8px $rgb-box-shadow-color;
+    				text-align:left;
+    				background:$white;
+					
+					li {
+						display: block;
+						margin: 0 !important;
+						padding:0;
+						&:hover{
+							&:after{
+									content: none;
+				    				display: none;
+									border-bottom: 0px;
+								}
+						}
+						a {
+							font-weight: $fw-regular;
+							color:$black;
+							font-weight: $fw-regular;
+							text-transform: capitalize;
+							font-size:16px;
+							line-height: 32px;
+							padding-left:15px;
+
+							&:hover{
+								color:$green;
+							}
+
+						}
+					}
+				}
+				&:hover {
+					> ul {
+						display:block;
+					}
+				}
+				&:last-child{
+					&:after{
+						content: none;
+					}
+				}
+				&.active {
+					> a {
+						color:$green;
+					}
+				}
+			}
+		}
+	}
+
+	.nav__booking__btn{
+		margin: 10px 15px;
+	}
+
+	.primary-nav__login {
+		span {
+			margin-left: 3px;
+    		margin-right: -7px;
+		}
+	}
+
+
+	.nav__phone__btn{
+		i{
+			color:$light-gold;
+			font-size:30px;
+			vertical-align: middle;
+		}
+		span{
+			font-family:$ff-poppins;
+			font-size:24px;
+			color:$light-blue;
+			padding:0 10px;
+		}
+	}
+
+	.primary-nav__enquire {
+		display:none !important;
+	}
+}
+
+
+.section-white {
+	#primary-nav {
+		ul {
+			li {
+				a{
+					color: $black;
+				}
+			}
+		}
+	}
+	.primary-nav__login--icon {
+		color: $black !important;
+	}
+}
+
+@media screen and (max-width:991px){
+
+	/* ==| HEADER AND NAVIGATION ============================= */
+	.primary__header{
+		height:68px;
+
+		.nav__fr__btn {
+			margin: -39px 0 10px 15px;
+			border-radius: 38px 0 0 38px;
+			width: 170px;
+			.icon-sync-user {
+				display:none;
+			}
+		}
+
+		.logo{
+			top:-23px !important;
+			left:50px !important;
+			transform:none !important;
+			img{
+				max-width:160px;
+			}
+		}
+
+		.container--fluid-fw{
+			padding:0;
+		}
+	
+		.primary-nav__enquire {
+			display:block  !important;	
+
+			a {
+				padding: 5px !important;
+			    border-radius: 31px;
+			    width: 158px;
+			    font-weight: 500 !important;
+			}
+		}
+		.nav__top{
+			.nav__booking__btn{
+				height:45px;
+				margin:0;
+			}
+			.nav__phone__btn {
+				margin-right: 15px;
+				span{
+					display:none;
+				}
+			}
+			.nav-toggle{
+				color:$green;
+				position: absolute;
+			    left: 0;
+			    width: 45px;
+			    text-align: center;
+			    font-size: 26px;
+			    top: 14px;
+			    cursor:pointer;
+				z-index: 6;
+
+				&:hover{
+					color:$green;
+				}	
+
+				&.active{
+					color:$green;
+
+					&:hover{
+						color:$green;
+					}
+
+					i:before{
+						content: '\f00d';
+					}
+				}
+			}
+		}
+		.primary-nav__login--icon {
+			margin-right: 2px !important;
+		}
+		#primary-nav{
+			position:fixed;
+			top:0;
+			left:0;
+			right:0;
+			height: 100%;
+			z-index: 5;
+			width: 100%;
+			max-width: 100%;
+			background:$light-grey;
+			text-align:left;
+			display: none;
+			overflow:auto;
+			padding-bottom:50px;	
+			padding-top: 59px;
+    		text-align: center;		
+
+			ul{
+				margin:0;
+				padding:0 20px;
+				li{
+					display: block;
+					margin: 17px;
+
+					a{
+						padding:0;
+						line-height:45px;
+						font-size: 26px;
+					}
+
+					i{
+						display: inline-block;
+					    float: right;
+					    //padding: 15px 0;
+					    margin-right:15px;
+					    color: $black;
+					    content: '\f107';
+					    cursor:pointer;
+					    padding-top:15px;
+					    position: absolute;
+    					right: 0;
+
+					    &.active{
+					    	&:before{
+								content: '\f106';
+					    	}
+					    }
+					}
+					ul{
+						width:100%;
+						position:relative;
+						left:0;
+						display: none !important;
+						box-shadow:none;
+						-webkit-box-shadow: none;
+						padding:10px !important;
+						li{
+							display: block;
+							text-align: center;
+							border-bottom: 0px;
+							margin-left: 0px !important;
+						}
+						&.active{
+							display: block !important;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+@media screen and (min-width: 992px){
+
+	/* ==| HEADER AND NAVIGATION ============================= */
+	.nav-toggle{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 1199px){
+
+	.primary__header{
+		.logo{
+			left:50px;
+			//transform: translateX(-50%);
+			//-webkit-transform: translateX(-50%);
+			-moz-transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+
+			img{
+				max-width:160px;
+			}
+
+			&.scroll{
+				opacity:0;
+				pointer-events:none;
+			}
+		}
+	}
+
+}

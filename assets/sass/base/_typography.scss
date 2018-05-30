@@ -1,0 +1,66 @@
+.text-white {
+  color: $white !important;
+}
+
+.text-green {
+  color: $green !important;
+}
+
+.text-blue {
+  color: $light-blue !important;
+}
+
+.text-blue-dark {
+  color: $black !important;
+}
+
+.text-grey {
+  color: $grey !important;
+}
+
+.text-xs {
+  font-size: 12px !important;
+}
+
+.text-sm {
+  font-size: 14px !important;
+}
+
+.text-md {
+  font-size: 17px !important;
+}
+
+.text-lg {
+  font-size: 20px !important;
+}
+.text-huge {
+  font-size: 32px !important;
+}
+
+.text-hover--green:hover {
+    color: $green !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-up {
+  text-transform: uppercase;
+}
+
+.text-low {
+  text-transform: lowercase;
+}
+
+.text-cap {
+  text-transform: capitalize;
+}
+
+.text-top_18 {
+  top: 132px;
+}
+
+.text-top_26 {
+  top: 194px;
+}

@@ -1,0 +1,136 @@
+footer{
+	nav{
+		padding-bottom:10px;
+		span{
+			a{
+				font-family:$ff-raleway;
+				font-weight: $fw-bold;
+				font-size: 15px;
+				line-height: 40px;
+				color: $white;
+				text-transform: uppercase;
+				padding:0 15px;
+
+				&:hover{
+					color: $light-gold;
+				}
+				&.active{
+					color: $light-gold;
+				}
+			}
+		}
+	}
+	
+	.footer__top_ul,
+	.footer__bottom_ul {
+		list-style-type: none;
+    	padding: 0;
+	}
+	.footer__top_title {
+		font-family: $ff-poppins;
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	.footer__top_links {
+		font-family: $ff-poppins;
+		font-weight: 400;
+		font-size: 15px;
+		color: $extreme-grey;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	.footer__bottom_title {
+		font-family: $ff-poppins;
+		font-weight: 500;
+		font-size: 18px;
+		color: $green;
+	}
+
+	.footer__bottom_text {
+		font-family: $ff-poppins;
+		font-weight: 400;
+		font-size: 15px;
+	}
+	.footer__bottom_logo {
+		margin-top:26px;
+	}
+	.footer__social{
+		font-size: 16px;
+		padding:0px 2px;
+		color: $white;
+		line-height:30px;
+	}
+	.footer__copyright,
+	.footer__credits {
+		font-size: 14px;
+		font-family: $ff-poppins;
+		font-weight: 400;
+		color: $white;
+	}
+	.footer__credits,
+	.footer__contact{
+		a{
+			color: $white;
+			
+			&:hover{
+				color: $light-gold;
+			}
+		}
+	}
+
+	.footer__contact >	label{
+		color:$light-blue;
+	}
+}
+
+.footer__credit {
+
+	p {
+	    background: #323232;
+	    bottom: 0;
+	    padding: 22px 0 22px;
+	    height: 100%;
+	    display: block;
+	    vertical-align: middle;
+	    margin: 0;
+	}
+
+    a {
+    	color: $green !important;
+    }
+}
+
+@media screen and (max-width:767px){
+	
+	/* ==| FOOTER ============================= */
+	footer{
+		.footer__copyright,.footer__credits{
+			display:block;
+			margin-bottom:10px;
+		}
+		.footer__copyright{
+			margin-top:15px;
+		}
+		
+	}
+}
+
+@media screen and (max-width:991px){
+
+	/* ==| FOOTER ============================= */
+	footer{
+		text-align:center;
+		font-family: $ff-poppins;
+		font-weight: 400;
+		font-size: 14px;
+
+		h4{
+			margin-top:30px;
+		}
+	}
+
+}

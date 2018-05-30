@@ -1,0 +1,52 @@
+// Basic Color Variables
+$white: #FFFFFF;
+$black: #202020;
+$grey: #A7A9AA;
+$green: #649500;
+
+$mid-grey: #EEEEEE;
+$light-grey: #f2f3f3;
+$extreme-grey: #767676;
+
+$rgb-box-shadow-color: rgba($mid-grey, 0.7);
+
+// Primary Color Variables
+$light-gold: #FFD602;
+$dark-gold: #DFB00C;
+$dark-green: #507701;
+
+
+$dark-blue: #003B45;
+$mid-blue: #014B58;
+$light-blue: #7C99A2;
+
+// FONT FAMILIES
+$ff-raleway: 'Raleway', sans-serif;
+$ff-poppins: 'Poppins', sans-serif;
+$ff-courgette: 'Courgette', sans-serif;
+$ff-fa: 'FontAwesome';
+
+$fw-regular:400;
+$fw-medium:500;
+$fw-semi-bold:600;
+$fw-bold:700;
+
+
+// General Variables
+$body-bg-color:$light-grey;
+$base-color: $black;
+
+$footer-color: $white;
+$content-color: inherit;
+
+$base-font-size: 18px;
+$base-line-height: 1.4;
+$base-font: $ff-raleway;
+
+$anchor-color: inherit;
+$anchor-font-weight: 100;
+$heading-font-weight: 100;
+
+
+$graphics-dir-path: '../../graphics/' !default;
+$fonts-dir-path: '../fonts/' !default;

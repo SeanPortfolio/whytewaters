@@ -1,0 +1,189 @@
+.container--fluid-fw {
+  max-width: 1515px;
+}
+
+.container--pull-vrt {
+  margin-top: -100px;
+}
+
+.container-no-gutters {
+  padding: 0 !important;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section-no-gutters {
+  padding: 0 !important;
+}
+
+.section {
+  padding: 30px 0 0;
+}
+
+.section-border {
+  border-top: 5px solid $light-gold;
+  border-bottom: 5px solid $light-gold;
+}
+
+.section-border--top {
+  border-top: 5px solid $light-gold;
+}
+
+.section-border--bottom {
+  border-bottom: 5px solid $light-gold;
+}
+
+.section-white {
+  background-color: $white !important;
+}
+
+.section--green {
+  background-color: $green;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  background-image: url("/graphics/sectio-green-pattern.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  .pattern-right {
+    position: absolute;
+    right: 0;
+    top: -50%;
+  }
+}
+
+.bg--white {
+  background: $white;
+}
+
+.bg--blue {
+  background: $black;
+}
+
+.bg--black {
+  background: $black;
+}
+
+.bg--grey {
+  background: $light-grey;
+}
+
+.has-gutters {
+  padding: 30px;
+}
+
+.has--shadow {
+  -webkit-box-shadow: 0 0 10px 0 $rgb-box-shadow-color;
+  box-shadow: 0 0 10px 0 $rgb-box-shadow-color;
+}
+
+.row-fs {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row-gutters {
+  padding: 0 15px;
+}
+
+.row.content-row {
+  padding-bottom: 15px;
+}
+
+.section__heading {
+  font-family: $ff-raleway;
+  font-size: 32px;
+  line-height: 48px;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.main__content__wrapper {
+  /*max-width:1515px;*/
+  margin: 0 auto;
+  /*padding:0 15px;*/
+}
+
+.main__content {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__intro--desc {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 30px;
+  border-left: 6px solid $green;
+  padding-left: 20px;
+}
+
+.content__wrapper {
+  padding-bottom: 30px;
+  a {
+    color: $green;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.section {
+  &.has-sidebar {
+    .main__content {
+      max-width: 100% !important;
+      text-align: left;
+
+      .header__badge {
+        margin: 0 0 15px 0;
+      }
+      .col--content {
+        //float:right;
+      }
+      .col--sidebar {
+        //float:left;
+        //position:absolute;
+
+        display: table-cell;
+        vertical-align: top;
+        background: $black;
+      }
+    }
+    .main__intro {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .grid-cols {
+    max-width: 450px;
+  }
+
+  /* ==| Sections and Containers ============================= */
+  .pull--vrt {
+    margin-top: 0px;
+  }
+  .has-gutters {
+    padding: 30px 15px;
+  }
+
+  /* ==| Tour ============================= */
+
+  .section {
+    &.has-sidebar {
+      .main__intro {
+        padding-left: 15px;
+      }
+    }
+  }
+
+}

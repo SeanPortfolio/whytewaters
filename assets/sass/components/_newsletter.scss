@@ -1,0 +1,49 @@
+#news-signup-form{
+	width:100%;
+	max-width:550px;
+	margin:0 auto;
+	.form-group{
+		padding:0px;
+		margin-bottom:0;
+		margin-top: 30px;
+	}
+}
+#signup-email{
+	width:210px;
+	max-width:210px;
+	margin-right:-5px;
+	height:50px;
+	display:inline-block;
+	padding-top: 7px;
+    border: 0;
+}
+#newsletter-submit{
+	height:50px;
+	margin:1px 0 0 0;
+	border:0px !important;
+}
+
+@media screen and (max-width: 580px){
+	
+	/* ==| FOOTER ============================= */
+	footer{
+
+		nav > span >a{
+			display:block;
+			line-height:30px;
+		}
+
+		.newsletter__wrapper{
+			#signup-email, #newsletter-submit{
+				width:100%;
+				max-width:280px;
+				display:block;
+				margin:0 auto;
+			}
+			#newsletter-submit{
+				margin-top:15px;
+			}
+
+		}
+	}
+}

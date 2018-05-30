@@ -1,0 +1,70 @@
+.main__intro--heading {
+  font-size: 30px;
+}
+
+.section--homepage-youtube {
+  margin-top: 20px;
+}
+
+.homepage-youtube-wrapper {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.homepage-youtube-resizer {
+  position: relative;
+  padding-bottom: 65%;
+  height: auto;
+  overflow: hidden;
+}
+
+.play-video-btn {
+  width: 80px;
+  height: 80px;
+  background: $green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+
+.play-video-btn .fa {
+  font-size: 36px;
+  color: $white;
+  margin-left: 6px;
+  margin-top: 21px;
+  display: block;
+}
+
+.homepage-youtube__background {
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#ytplayer {
+  position: absolute;
+  left:0; top: 0;
+  border-radius: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.no-flexboxlegacy {
+  .section--homepage-youtube {
+    .play-video-btn {
+      margin-left: -40px;
+      margin-top: -40px;
+    }
+  }
+}

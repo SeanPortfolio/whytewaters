@@ -1,0 +1,40 @@
+.section--highlights {
+	background: #222222;
+	padding-bottom: 30px;
+}
+
+.highlight{
+	padding:15px 30px;
+	border-right: 2px solid #565656;
+	&:last-of-type {
+		border-right: none;
+	}
+	.highlight__icon__wrapper{
+		height:100px;
+		width:130px;
+		margin:0 auto;
+		padding:31px;
+	}
+
+	.highlight__icon{
+		content:'';
+		display:block;
+		height:72px;
+		width:72px;
+		background-repeat:no-repeat;
+	}
+
+	.highlight__desc{
+		font-weight: 400;
+		color: $white;
+		font-size: 23px;
+		line-height: 34px;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.highlight {
+		border: none;
+	}
+}
